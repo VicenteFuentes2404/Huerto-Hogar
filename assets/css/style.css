@@ -1,0 +1,74 @@
+/* Fuentes */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F7F7F7;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+/* Header */
+.HeaderPrincipal {
+  background: #dce6da;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 2px solid #eee;
+}
+.HeaderPrincipal .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.HeaderPrincipal .nav-enlaces a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #2E8B57;
+  font-weight: 600;
+}
+.main-header .usuario-carrito {
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+  background: #dce6da;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #eee;
+}
+.footer-enlaces a {
+  color: #2E8B57;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.footer-formulario {
+  margin: 15px 0;
+}
+.footer-formulario input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.copy {
+  color: #666666;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
