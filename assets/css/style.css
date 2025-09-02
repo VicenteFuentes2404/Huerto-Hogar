@@ -8,8 +8,24 @@ body {
   line-height: 1.6;
 }
 
+.HeaderPrincipal {
+  background: #2E7D32;
 
-/* Header */
+}
+
+.linea1 {
+  border-right: 1px solid rgb(187, 186, 186);
+}
+
+.navbar .nav-link {
+    color: #ffffff; /* blanco */
+}
+
+.navbar .nav-link:hover {
+    color: #cce8c6; /* opcional: un verde más claro al pasar el mouse */
+}
+
+/* Header 
 .HeaderPrincipal {
   background: #dce6da;
   display: flex;
@@ -18,6 +34,7 @@ body {
   padding: 15px 30px;
   border-bottom: 2px solid #eee;
 }
+  
 .HeaderPrincipal .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -32,30 +49,19 @@ body {
   font-size: 0.9rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
 /* Footer */
 .footer {
-  background: #dce6da;
+  background: #2E7D32;
   padding: 20px;
   text-align: center;
   border-top: 2px solid #eee;
+  color: #ffffff
 }
 .footer-enlaces a {
-  color: #2E8B57;
   margin: 0 5px;
   text-decoration: none;
 }
@@ -68,7 +74,14 @@ body {
   border-radius: 5px;
 }
 .copy {
-  color: #666666;
   font-size: 0.8rem;
   margin-top: 10px;
+}
+
+footer a {
+  color:#ffffff
+}
+
+footer a:hover {
+    color: #cce8c6; /* opcional: un verde más claro al pasar el mouse */
 }
