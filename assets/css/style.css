@@ -38,7 +38,10 @@ body {
 
 
 
-
+/* espacio entre el inicio de sesion y el footer */
+.h-100 {
+    margin-bottom: 50px; 
+}
 
 
 
