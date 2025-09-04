@@ -108,4 +108,13 @@ section h1 {
 .btn-success:hover {
   background-color: #256628;
   border-color: #256628; /* opcional: un verde más oscuro al pasar el mouse */
+
 }
+
+/* espacio entre el inicio de sesion y el footer */
+.h-100 {
+    margin-bottom: 50px; 
+}
+
+}
+
