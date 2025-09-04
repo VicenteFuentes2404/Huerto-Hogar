@@ -9,20 +9,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^\s@]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com)$/;
+
 
     let errores = [];
 
     if (!email) {
       errores.push("El correo electrónico es obligatorio.");
-    } else if (!emailRegex.test(email)) {
-      errores.push("El formato del correo electrónico no es válido.");
-    }
+      } else if (!emailRegex.test(email)) {
+    errores.push("El correo debe ser @duoc.cl, @profesor.duoc.cl o @gmail.com.");
+    } else if (email.length > 100){
+      errores.push("EL correo debe tener como máximo 100 caracteres")
+      }
 
     if (!password) {
       errores.push("La contraseña es obligatoria.");
     } else if (password.length < 4) {
       errores.push("La contraseña debe tener al menos 4 caracteres.");
+    } else if (password.length > 10){
+      errores.push("La contraseña debe tener como máximo 10 caracteres")
     }
 
     if (errores.length > 0) {
@@ -69,25 +74,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//VALIDACIÓN CORREO EN FOOTER
+
+
+// VALIDACIÓN CORREO EN FOOTER
 document.addEventListener("DOMContentLoaded", function () {
   const formBoletin = document.getElementById("formBoletin");
-  const emailInput = document.getElementById("email");
+  const emailInput = document.getElementById("emailBoletin"); // <- corregido
   const mensaje = document.getElementById("mensajeSuscripcion");
 
   formBoletin.addEventListener("submit", function (e) {
     e.preventDefault(); // Evita recargar la página
 
     const email = emailInput.value.trim();
-    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regexEmail = /^[^\s@]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com)$/i;
 
-    if (regexEmail.test(email)) {
+    if (!regexEmail.test(email)) {
+      mensaje.textContent = "Por favor ingresa un correo válido (@duoc.cl, @profesor.duoc.cl o @gmail.com).";
+      mensaje.style.color = "red";
+    } else if (email.length > 100) {
+      mensaje.textContent = "El correo no puede tener más de 100 caracteres.";
+      mensaje.style.color = "red";
+    } else {
       mensaje.textContent = "¡Gracias por suscribirte al boletín!";
       mensaje.style.color = "white";
-      emailInput.value = ""; 
-    } else {
-      mensaje.textContent = "Por favor ingresa un correo válido.";
-      mensaje.style.color = "red";
+      emailInput.value = "";
     }
   });
 });
