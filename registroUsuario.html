@@ -71,31 +71,100 @@
 
 
     <main>
-        <section>
-            <!-- Sección principal -->
-            <article>
-                <!-- Artículo o contenido dentro de la sección -->
-            </article>
+        <section class="h-100">
+            <div class="container h-100">
+                <div class="row justify-content-sm-center h-100">
+                    <!--Esto de acá está controlando cuánto de la grid ocupa su contenido en diferentes pantallas-->
+                    <!--por ejemplo, columnas en -pantallas extra extra grandes - 4/12 columnas-->
+                    <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+                        <div class="text-center my-5">
+                            <img src="/assets/img/logo-huerto.png" alt="logo" width="250">
+                        </div>
+
+                        <div class="card shadow-lg">
+                            <div class="card-body p-5">
+                                <h1 class="fs-4 card-title fw-bold mb-4">Registro de usuario</h1>
+                                <form method="POST" class="needs-validation" novalidate autocomplete="off">
+                                    <!-- Nombre completo -->
+                                    <div class="mb-3">
+                                        <label class="mb-2 text-muted" for="nombre">Nombre completo</label>
+                                        <input id="nombre" type="text" class="form-control" name="nombre" required autofocus>
+                                        <div class="invalid-feedback">
+                                            El nombre es requerido
+                                        </div>
+                                    </div>
+
+                                    <!-- Correo -->
+                                    <div class="mb-3">
+                                        <label class="mb-2 text-muted" for="correo">Correo</label>
+                                        <input id="correo" type="email" class="form-control" name="correo" required>
+                                        <div class="invalid-feedback">
+                                            El correo electrónico no es válido
+                                        </div>
+                                    </div>
+
+                                    <!-- Contraseña -->
+                                    <div class="mb-3">
+                                        <label class="text-muted" for="password">Contraseña</label>
+                                        <input id="password" type="password" class="form-control" name="password" required>
+                                        <div class="invalid-feedback">
+                                            La contraseña es requerida
+                                        </div>
+                                    </div>
+
+                                    <!-- Confirmar contraseña -->
+                                    <div class="mb-3">
+                                        <label class="text-muted" for="confirm_password">Confirmar contraseña</label>
+                                        <input id="confirm_password" type="password" class="form-control" name="confirm_password" required>
+                                        <div class="invalid-feedback">
+                                            La confirmación es requerida
+                                        </div>
+                                    </div>
+
+                                    <!-- Teléfono -->
+                                    <div class="mb-3">
+                                        <label class="mb-2 text-muted" for="telefono">Teléfono (opcional)</label>
+                                        <input id="telefono" type="tel" class="form-control" name="telefono">
+                                        <div class="invalid-feedback">
+                                            El número de teléfono no es válido
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <select class="form-select" aria-label="selec region">
+                                                <option selected>-- Región --</option>
+                                                <option value="1">Región Metropolitana de Santiago</option>
+                                                <option value="2">Región de la Araucanía</option>
+                                                <option value="3">Región de Ñuble</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col">
+                                            <select class="form-select" aria-label="selec comuna">
+                                                <option selected>-- Comuna --</option>
+                                                <option value="1">Linares</option>
+                                                <option value="2">Longaví</option>
+                                                <option value="3">Concepción</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Botón -->
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <button type="submit" class="btn btn-success">
+                                            Registrar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
 <!--Pie de pàgina-->
     <footer class="footer">

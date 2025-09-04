@@ -25,6 +25,10 @@ body {
     color: #cce8c6; /* opcional: un verde más claro al pasar el mouse */
 }
 
+/* espacio entre el inicio de sesion y el footer */
+.h-100 {
+    margin-bottom: 50px; 
+}
 
 
 
