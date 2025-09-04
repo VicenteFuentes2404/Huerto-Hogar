@@ -166,20 +166,27 @@
     </main>
 
 
-<!--Pie de pàgina-->
+    <!--Pie de pàgina-->
     <footer class="footer">
     <div class="footer-enlaces">
       <a href="#">Category X</a> |
       <a href="#">Category Y</a> |
       <a href="#">Category Z</a>
     </div>
-    <div class="footer-formulario">
+     <!-- Formulario de suscripción -->
+  <div class="footer-formulario">
+    <form id="formBoletin">
       <label for="email">Suscríbete al boletín:</label>
-      <input type="email" id="email" placeholder="Tu correo" />
-      <button class="boton">Suscribirse</button>
-    </div>
-    <p class="copy">© 2025 Huerto Hogar</p>
-  </footer>
+      <input type="email" id="email" placeholder="Tu correo" required />
+      <button type="submit" class="boton">Suscribirse</button>
+    </form>
+    <p id="mensajeSuscripcion" class="mensaje"></p>
+  </div>
+
+  <p class="copy">© 2025 Huerto Hogar</p>
+</footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/validations.js"></script>
 </body>
 </html>
