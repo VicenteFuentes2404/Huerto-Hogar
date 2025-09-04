@@ -1,43 +1,194 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Huerto Hogar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!--iconos de bootstrap-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> <!--Conectamos las fuentes solicitadas-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css"> <!--Conectamos con el style-->
+    
 
     
 </head>
     <body>
+        <!--HEADER-->
         <header class="HeaderPrincipal">   
-            <div class="logo">🌱 Huerto Hogar</div>
-                <nav class="nav-enlaces">
-                <a href="#">Inicio</a>
-                <a href="#">Productos</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Blog</a>
-                <a href="#">Contacto</a>
+            <nav class="navbar ms-5"> <!--clase de Bootstrap para estilos en la navbar, con un margin-5-->
+                <div class="container-fluid d-flex align-items-center">
+                    <!--LOGO-->
+                    <div>
+                        <a class="navbar-icono" href="#">
+                        <img src="assets/img/logo2.png" alt="Logo" width="" height="40" class="d-inline-block align-text-top">
+                        </a>
+                    </div>
+                    <!--Menú-->
+                    <div>
+                    <ul class="nav ms-5">
+                        <li class="nav-item">
+                            <a class="nav-link linea1" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linea1" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linea1" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linea1" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                      
 
-         </nav>
-             <div class="usuario-carrito">
-                    <a href="inicioSesion.html">Iniciar sesión</a> | 
-                    <a href="#">Registrar</a>
-                    <span class="carrito">🛒 (0)</span>
-        </div>
+                        
+                    </ul>
+                    </div>
+
+                    <!--Carrito de compra-->
+                    <div class="ms-auto me-5">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> <i class="bi bi-cart4"> (0) </i></a>
+                                </li>
+                            <li class="nav-item me-0">
+                                <a class="nav-link" href="inicioSesion.html">Iniciar Sesión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html">Registrarse</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </nav>   
     </header>
 
-    <nav>
-        <!-- Navegación principal -->
-    </nav>
 
+
+
+    <!-- HERO -->
+  <section class="py-5 hero">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="me-4">
+      <h1 class="fw-bold">TIENDA ONLINE</h1>
+      <p>Nuestros productos ayudan a que tu huerto en casa sea más fácil de mantener y más productivo. Descúbrelos ahora.</p>
+      <a href="#productos" class="btn btn-outline-dark">Ver productos</a>
+    </div>
+    <div>
+      <img src="assets/img/huerto hero.jpg" alt="Huerto" class="img-fluid rounded shadow hero-foto">
+    </div>
+  </div>
+</section>
+
+
+
+<!--CARDS PRODUCTOS DESTACADOS-->
     <main>
-        <section>
-            <!-- Sección principal -->
-            <article>
-                <!-- Artículo o contenido dentro de la sección -->
-            </article>
-        </section>
+        <main class="container my-5" id="productos" >
+        <div class="row g-4">
+        <!-- Producto 1 -->
+        <div class="col-md-3">
+            <div class="card h-100 shadow">
+            <img src="assets/img/manzana fuji.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Manzanas Fuji</h5>
+                <p class="card-text"> Manzanas Fuji crujientes y dulces.</p>
+                <p class="fw-bold">$1.200 por kilo</p>
+                <a href="detalleproducto.html" class="btn btn-success">Ver Producto</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card h-100 shadow">
+            <img src="assets/img/Naranjas valencia.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Naranjas Valencia</h5>
+                <p class="card-text">Jugosas y ricas en vitamina C.</p>
+                <p class="fw-bold">$1.000 por kilo</p>
+                <a href="detalleproducto.html" class="btn btn-success">Ver Producto</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card h-100 shadow">
+            <img src="assets/img/Plátanos Cavendish.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Plátanos Cavendish</h5>
+                <p class="card-text">Maduros y dulces.</p>
+                <p class="fw-bold">$800 por kilo</p>
+                <a href="detalleproducto.html" class="btn btn-success">Ver Producto</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card h-100 shadow">
+            <img src="assets/img/Zanahorias Orgánicas.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Zanahorias Orgánicas</h5>
+                <p class="card-text">Crujientes cultivadas sin pesticidas.</p>
+                <p class="fw-bold">$900 por kilo</p>
+                <a href="detalleproducto.html" class="btn btn-success">Ver Producto</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+           <div class="card h-100 shadow">
+            <img src="assets/img/Espinacas frescas.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Espinacas Frescas</h5>
+                <p class="card-text">Frescas y nutritivas.</p>
+                <p class="fw-bold">$700 por 500g</p>
+                <a href="detalleproducto.html" class="btn btn-success">Ver Producto</a>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="card h-100 shadow">
+            <img src="assets/img/Pimientos Tricolores.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Pimientos Tricolores</h5>
+                <p class="card-text">Ideales para salteados.</p>
+                <p class="fw-bold">$1.500 por kilo</p>
+                <a href="detalleproducto.html" class="btn btn-success">Ver Producto</a>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="card h-100 shadow">
+            <img src="assets/img/miel organica.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Miel Orgánica</h5>
+                <p class="card-text">Pura y orgánica.</p>
+                <p class="fw-bold">$5.000</p>
+                <a href="detalleproducto.html" class="btn btn-success">Ver Producto</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+           <div class="card h-100 shadow">
+            <img src="assets/img/KIWI.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Kiwi</h5>
+                <p class="card-text">Dulces y jugosos.</p>
+                <p class="fw-bold">$1.000 por kilo</p>
+                <a href="detalleproducto.html" class="btn btn-success">Ver Producto</a>
+            </div>
+            </div>
+        </div>
+
+
+        
     </main>
 
 
@@ -51,8 +202,15 @@
 
 
 
+
+
+
+
+
+    
+
+<!--Pie de pàgina-->
     <footer class="footer">
-        <!--Pie de pàgina-->
     <div class="footer-enlaces">
       <a href="#">Category X</a> |
       <a href="#">Category Y</a> |
@@ -65,5 +223,7 @@
     </div>
     <p class="copy">© 2025 Huerto Hogar</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
