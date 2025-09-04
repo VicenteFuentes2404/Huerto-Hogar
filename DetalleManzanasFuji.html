@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Huerto Hogar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!--iconos de bootstrap-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> <!--Conectamos las fuentes solicitadas-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css"> <!--Conectamos con el style-->
+    
+
+    
+</head>
+    <body>
+        <!--HEADER-->
+        <header class="HeaderPrincipal">   
+            <nav class="navbar ms-5"> <!--clase de Bootstrap para estilos en la navbar, con un margin-5-->
+                <div class="container-fluid d-flex align-items-center">
+                    <!--LOGO-->
+                    <div>
+                        <a class="navbar-icono" href="#">
+                        <img src="assets/img/logo2.png" alt="Logo" width="" height="40" class="d-inline-block align-text-top">
+                        </a>
+                    </div>
+                    <!--Menú-->
+                    <div>
+                    <ul class="nav ms-5">
+                        <li class="nav-item">
+                            <a class="nav-link linea1" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linea1" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linea1" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linea1" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                      
+
+                        
+                    </ul>
+                    </div>
+
+                    <!--Carrito de compra-->
+                    <div class="ms-auto me-5">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> <i class="bi bi-cart4"> (0) </i></a>
+                                </li>
+                            <li class="nav-item me-0">
+                                <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html">Registrarse</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </nav>   
+    </header>
+
+
+
+
+
+ <main class="container my-5">
+
+    <!-- Migas de pan -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="#">Categoría X</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Manzanas Fuji</li>
+      </ol>
+    </nav>
+
+    <div class="row">
+      <!-- Carrusel de imágenes -->
+      <div class="col-md-6">
+        <div id="carouselProducto" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselProducto" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselProducto" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselProducto" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/manzana fuji.jpg" class="d-block w-100" alt="Producto imagen 1">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/manzanas fuji 2.PNG" class="d-block w-100" alt="Producto imagen 2">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/Manzana fuji 3.jpg" class="d-block w-100" alt="Producto imagen 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Información del producto -->
+      <div class="col-md-6">
+      <h2 class="nombre-producto d-flex align-items-center">
+        Manzanas Fuji
+        <span class="badge bg-success ms-3">Disponible</span> <!--bg-danger PARA NO DISPONIBLE-->
+      </h2>
+      <p class="precio-producto">$1,200 CLP por kilo</p>
+      <p class="descripcion-producto">
+        Manzanas Fuji crujientes y dulces, cultivadas en el Valle del Maule.
+        Perfectas para meriendas saludables o como ingrediente en postres.
+        Estas manzanas son conocidas por su textura firme y su sabor equilibrado entre dulce y ácido.
+      </p>
+
+      
+        <!-- Selección cantidad -->
+        <div class="mb-3">
+          <label for="cantidad" class="form-label">Cantidad</label>
+          <select id="cantidad" class="form-select w-25">
+            <option value="1">1 kg</option>
+            <option value="2">2 kg</option>
+            <option value="3">3 kg</option>
+            <option value="3">5 kg</option>
+            <option value="3">6 kg</option>
+            <option value="3">7 kg</option>
+            <option value="3">8 kg</option>
+          </select>
+        </div>
+
+        <!-- Botón añadir al carrito -->
+        <button class="btn btn-primary">Añadir al carrito</button>
+      </div>
+    </div>
+
+
+    <!-- mapa de origen-->
+ <div class="mapa-origen">
+    <h5>Origen: Valle del Maule</h5>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106445.43781221042!2d-71.6715!3d-35.4264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665cf38c06b4f0d%3A0x7a1df2cbd98f2b3c!2sMaule%2C%20Chile!5e0!3m2!1ses-419!2scl!4v1694285763941!5m2!1ses-419!2scl" 
+      width="%" 
+      height="250" 
+      style="border:0; border-radius:10px;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</div>
+
+
+
+    <!-- Sección de reseñas -->
+    <section class="mt-5">
+      <h3>Reseñas de clientes</h3>
+
+      <!-- Formulario reseña -->
+      <form id="formResena" class="mb-4">
+      <div class="mb-3">
+        <label for="calificacion" class="form-label">Tu calificación</label>
+        <select id="calificacion" class="form-select w-25">
+          <option value="5">★★★★★ (5)</option>
+          <option value="4">★★★★☆ (4)</option>
+          <option value="3">★★★☆☆ (3)</option>
+          <option value="2">★★☆☆☆ (2)</option>
+          <option value="1">★☆☆☆☆ (1)</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="comentario" class="form-label">Tu reseña</label>
+        <textarea id="comentario" class="form-control" rows="3" placeholder="Escribe tu experiencia..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Enviar reseña</button>
+
+      <!-- Mensaje de validación -->
+      <p id="mensajeResena" class="mensaje"></p>
+    </form>
+
+
+      <!-- Lista de reseñas -->
+      <div class="reseña">
+        <p><strong>Juan Pérez</strong> - ★★★★★</p>
+        <p>Excelente producto, llegó rápido y de gran calidad.</p>
+      </div>
+      <hr>
+      <div class="reseña">
+        <p><strong>Ana Gómez</strong> - ★★★★☆</p>
+        <p>Muy bueno, aunque esperaba un tamaño un poco más grande.</p>
+      </div>
+    </section>
+
+    <!-- Productos relacionados -->
+<section class="mt-5">
+  <h3>Productos relacionados</h3>
+  <div class="row g-4">
+    
+    <div class="col-md-3">
+      <a href="detalle-producto1.html" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm hover-card">
+          <img src="assets/img/Plátanos Cavendish.jpg" class="card-img-top" alt="Producto relacionado 1">
+          <div class="card-body">
+            <h5 class="card-title">Plátanos Cavendish</h5>
+            <p class="card-text">$800 por kilo</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="detalle-producto2.html" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm hover-card">
+          <img src="assets/img/Naranjas valencia.jpg" class="card-img-top" alt="Producto relacionado 2">
+          <div class="card-body">
+            <h5 class="card-title">Naranjas Valencia</h5>
+            <p class="card-text">$1.000 por kilo</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="detalle-producto3.html" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm hover-card">
+          <img src="assets/img/Espinacas frescas.jpg" class="card-img-top" alt="Producto relacionado 3">
+          <div class="card-body">
+            <h5 class="card-title">Espínacas Frescas</h5>
+            <p class="card-text">$700 por 500g</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="detalle-producto4.html" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm hover-card">
+          <img src="assets/img/KIWI.jpg" class="card-img-top" alt="Producto relacionado 4">
+          <div class="card-body">
+            <h5 class="card-title">Kiwi</h5>
+            <p class="card-text">$1.500 por kilo</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+
+
+
+    <!--Pie de pàgina-->
+    <footer class="footer">
+    <div class="footer-enlaces">
+      <a href="#">Category X</a> |
+      <a href="#">Category Y</a> |
+      <a href="#">Category Z</a>
+    </div>
+     <!-- Formulario de suscripción -->
+  <div class="footer-formulario">
+    <form id="formBoletin">
+      <label for="email">Suscríbete al boletín:</label>
+      <input type="email" id="email" placeholder="Tu correo" required />
+      <button type="submit" class="boton">Suscribirse</button>
+    </form>
+    <p id="mensajeSuscripcion" class="mensaje"></p>
+  </div>
+
+  <p class="copy">© 2025 Huerto Hogar</p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/validations.js"></script>
+</body>
+</html>
