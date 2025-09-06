@@ -103,6 +103,57 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// VALIDACIÓN FORMULARIO DE CONTACTO ---
+document.addEventListener("DOMContentLoaded", () => {
+  const contactoForm = document.getElementById("contactoForm");
+  if (contactoForm) {
+    const nombreInput = document.getElementById("nombre");
+    const correoInput = document.getElementById("correo");
+    const mensajeInput = document.getElementById("mensaje");
+
+    contactoForm.addEventListener("submit", (event) => {
+      event.preventDefault(); // Evita recargar la página
+
+      let errores = [];
+      const nombre = nombreInput.value.trim();
+      const correo = correoInput.value.trim();
+      const mensaje = mensajeInput.value.trim();
+      const regexCorreo = /^[^\s@]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com)$/i;
+
+      // nombre
+      if (!nombre) {
+        errores.push("El nombre es obligatorio.");
+      } else if (nombre.length > 100) {
+        errores.push("El nombre no puede tener más de 100 caracteres.");
+      }
+
+      //  correo
+      if (!correo) {
+        errores.push("El correo electrónico es obligatorio.");
+      } else if (!regexCorreo.test(correo)) {
+        errores.push("Por favor ingresa un correo válido (@duoc.cl, @profesor.duoc.cl o @gmail.com.");
+      } else if (correo.length > 100) {
+        errores.push("El correo no puede tener más de 100 caracteres.");
+      }
+
+      // Validar comentario
+      if (!mensaje) {
+        errores.push("El comentario es obligatorio.");
+      } else if (mensaje.length > 500) {
+        errores.push("El comentario no puede tener más de 500 caracteres.");
+      }
+
+      // Mostrar errores o éxito
+      if (errores.length > 0) {
+        alert("Corrige los siguientes errores:\n\n" + errores.join("\n"));
+      } else {
+        alert("¡Mensaje enviado correctamente!");
+        contactoForm.reset(); // Limpia el formulario
+      }
+    });
+  }
+});
+
 
 
 //Cupón
