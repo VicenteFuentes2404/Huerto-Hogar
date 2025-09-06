@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Huerto Hogar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!--iconos de bootstrap-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> <!--Conectamos las fuentes solicitadas-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css"> <!--Conectamos con el style-->
+</head>
+<body>
+    <!--HEADER-->
+    <header class="HeaderPrincipal">   
+        <nav class="navbar ms-5"> <!--clase de Bootstrap para estilos en la navbar, con un margin-5-->
+            <div class="container-fluid d-flex align-items-center">
+                <!--LOGO-->
+                <div>
+                    <a class="navbar-icono" href="#">
+                    <img src="assets/img/logo2.png" alt="Logo" width="" height="40" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                    <!--Menú-->
+                <div>
+                    <ul class="nav ms-5">
+                        <li class="nav-item">
+                            <a class="nav-link linea1" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linea1" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linea1" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linea1" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">      
+                    </ul>
+                </div>
+
+                <!--Carrito de compra-->
+                <div class="ms-auto me-5">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="bi bi-cart4"> (0) </i></a>
+                        </li>
+                        <li class="nav-item me-0">
+                            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                       </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </nav>   
+    </header>
+    <main>
+        <div class = "text-center mt-4 mb-4">
+            <h1>NOTICIAS IMPORTANTES</h1>
+        </div>
+        <section>
+            <article>
+
+                <div class="card m-5 p-5">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Las plantas también tienen “amigas”</h4>
+                                <p class="card-text">En una huerta, algunas plantas crecen mejor cuando están juntas: por ejemplo, el tomate y la albahaca son grandes compañeros. La albahaca ayuda a ahuyentar plagas, y a cambio el tomate le da sombra para que no se reseque tan rápido. ¡Una amistad deliciosa!</p>
+                                <button class="btn btn-success mt-5">Ver caso</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/assets/img/huertoamigo.jpg" class="img-fluid rounded-start" alt="..." style="max-height: 40vh;">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </article>
+            <article>
+                <div class="card m-5 p-5">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Zanahorias que ven mejor con cebollas</h4>
+                                <p class="card-text">Cuando se siembran juntas, las cebollas ayudan a proteger a las zanahorias de una plaga llamada “mosca de la zanahoria”. Así, mientras crecen lado a lado, las dos se cuidan mutuamente y logran mejores cosechas.</p>
+                                <button class="btn btn-success mt-5">Ver caso</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/assets/img/zanahoriascebollas.jpg" class="img-fluid rounded-start" style="max-height: 40vh;" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                <nav aria-label="Page navigation example ">
+                    <ul class="pagination justify-content-center ">
+                    <li class="page-item"><a class="page-link " href="#">Anterior</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+        <!--Pie de pàgina-->
+    <footer class="footer">
+        <div class="footer-enlaces">
+            <a href="#">Category X</a> |
+            <a href="#">Category Y</a> |
+            <a href="#">Category Z</a>
+        </div>
+        <!-- Formulario de suscripción -->
+        <div class="footer-formulario">
+            <form id="formBoletin">
+                <label for="email">Suscríbete al boletín:</label>
+                <input type="email" id="emailBoletin" placeholder="Tu correo" required />
+                <button type="submit" class="boton">Suscribirse</button>
+            </form>
+            <p id="mensajeSuscripcion" class="mensaje"></p>
+        </div>
+
+        <p class="copy">© 2025 Huerto Hogar</p>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
