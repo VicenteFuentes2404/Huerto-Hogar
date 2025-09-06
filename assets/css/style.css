@@ -159,3 +159,15 @@ section h1 {
 }
 
 
+
+
+
+/*Paginación */
+.pagination .page-link {
+  color: #2E7D32
+
+}
+
+ .pagination .page-link:hover {
+    background-color: #7cda81; /* verde más oscuro */
+  }
