@@ -153,3 +153,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+
+//Cupón
+const boton = document.getElementById('aplicarCupon')
+const inputCupon = document.getElementById('elcupon')
+const mensaje = document.getElementById('mensajecupon')
+
+boton.addEventListener('click', function(){
+  if(inputCupon.value.trim() !== ""){
+    mensaje.textContent = "Cupón aplicado";
+    mensaje.style.color = "green";
+  } else{
+    mensaje.textContent = "Cupón inválido";
+    mensaje.style.color = "red";
+  }
+});
+
+
+
+
+
+ 
