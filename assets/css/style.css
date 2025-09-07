@@ -63,7 +63,16 @@ footer a {
 }
 
 footer a:hover {
-    color: #cce8c6; /* opcional: un verde más claro al pasar el mouse */
+    color: #cce8c6;
+}
+
+
+.menu a {
+  color:#000000
+}
+
+.menu a:hover {
+    color: #5c5c5c;
 }
 
 
