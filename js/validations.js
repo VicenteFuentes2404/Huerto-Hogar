@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Corrige los siguientes errores:\n\n" + errores.join("\n"));
     } else {
       alert("Datos correctos. Inicio de sesión exitoso.");
+      window.location.href = "Perfil.html";
     }
   });
 });
